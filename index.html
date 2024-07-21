@@ -10,11 +10,19 @@
     <header>
         <div class="container">
             <h1>Название</h1>
+            <div class="language-selector">
+                <select id="language">
+                    <option value="lv" selected>Latvian</option>
+                    <option value="en">English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
             <button class="menu-toggle" id="menu-toggle">☰</button>
             <nav id="nav-menu">
                 <ul>
                     <li><a href="#home">Главная</a></li>
                     <li><a href="#about">О нас</a></li>
+                    <li><a href="#dynamic-content">Для клиентов</a></li>
                     <li><a href="#services">Услуги</a></li>
                     <li><a href="#contact">Контакты</a></li>
                 </ul>
@@ -35,7 +43,7 @@
     </section>
     <section id="dynamic-content" class="content-section">
             <div class="container">
-                <h2>Для вас</h2>
+                <h2>Для клиентов</h2>
                 <div class="button-group">
                     <button class="content-btn" data-content="content1">Для Юр. лица</button>
                     <button class="content-btn" data-content="content2">Для Физ. лица</button>

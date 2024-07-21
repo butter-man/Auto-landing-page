@@ -84,7 +84,7 @@ nav {
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 0;
     background-color: #282c34;
     z-index: 1000;
@@ -117,7 +117,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #61dafb;
+    background-color: rgb(101, 104, 110);
 }
 
 /* Стили для секции героя */

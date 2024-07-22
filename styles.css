@@ -45,42 +45,43 @@ header h1 {
     right: 20px;
     top: 20px;
 }
-/*языковая панель*/
+
+/* Языковая панель */
 .language-selector {
     position: absolute;
     right: 100px;
-    top: 32px; 
+    top: 32px;
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
     font-size: 1em;
-    color: white; 
+    color: white;
 }
 
 .language-selector label {
-    margin: 0; 
+    margin: 0;
     font-size: 1em;
 }
 
 .language-selector select {
     background-color: #333;
-    border: none; 
-    color: white; 
-    padding: 5px 10px; 
-    border-radius: 5px; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
     font-size: 1em;
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .language-selector select:focus {
-    outline: none; 
-    background-color: #555; 
+    outline: none;
+    background-color: #555;
 }
 
 /* Стили для навигации */
 nav {
-    display: none; 
+    display: none;
     flex-direction: column;
     width: 100%;
     position: absolute;
@@ -91,7 +92,7 @@ nav {
 }
 
 nav.show {
-    display: flex; 
+    display: flex;
 }
 
 nav ul {
@@ -163,17 +164,18 @@ nav ul li a:hover {
 }
 
 .content-section p {
+    text-align: justify;
     font-size: 1.2em;
     margin-bottom: 30px;
 }
 
 .button-group {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .button-group button {
     background-color: #ffffff;
-    border:1%;
+    border: 1%;
     color: rgb(0, 0, 0);
     padding: 15px 30px;
     font-size: 1.2em;
@@ -184,7 +186,7 @@ nav ul li a:hover {
 }
 
 .button-group button:hover {
-    color:white;
+    color: white;
     background-color: #282c34;
     transform: scale(1.05);
 }
@@ -194,7 +196,7 @@ nav ul li a:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
-    text-align: left; /* Выравнивание текста по левому краю */
+    text-align: left;
 }
 
 .content-container {
@@ -207,6 +209,7 @@ nav ul li a:hover {
 .content-text {
     flex: 1;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 .content-text ul {
@@ -216,13 +219,78 @@ nav ul li a:hover {
 }
 
 .content-text li {
+    font-size: 20px;
     margin-bottom: 10px;
+    margin-top: 40px;
 }
 
 .content-image {
     flex: 1;
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
+    border-radius: 5px;
+}
+
+/* Стили для секции услуг в виде таблицы */
+.services-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    gap: 20px; /* Отступы между элементами */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Позволяет позиционировать элементы внутри */
+}
+
+.service-item h3 {
+    margin-top: 0;
+}
+
+.service-item p {
+    margin-bottom: 0;
+}
+
+.service-item img {
+    position: absolute;
+    bottom: -20px; /* Выход за нижнюю границу ячейки */
+    right: -20px; /* Выход за правую границу ячейки */
+    width: 80px; /* Устанавливаем размер изображения */
+    height: auto;
+    opacity: 0.7; /* Добавляем немного прозрачности */
+}
+
+/* Стиль для иконок */
+#icon-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.icon-wrapper {
+    display: inline-block;
+}
+
+.icon-wrapper img {
+    margin-right: 40px;
+}
+
+.icon-wrapper img:last-child {
+    margin-right: 0;
+}
+
+/* Стиль для разделителя */
+.custom-hr {
+    width: 60%;
+    height: 2px;
+    border: none;
+    background-color: #333;
+    margin: 20px auto;
     border-radius: 5px;
 }
 
@@ -248,7 +316,7 @@ footer {
 }
 
 .footer-section h3 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-bottom: 10px;
 }
 

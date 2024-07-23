@@ -47,3 +47,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     updateContent('content1');
 });
+const header = document.querySelector('header');
+
+
+const initialPadding = 10; 
+const reducedPadding = 3;  
+const initialFontSize = 1.5; 
+const reducedFontSize = 0.9; 
+
+function onScroll() {
+    const scrollY = window.scrollY;
+
+    const padding = Math.max(reducedPadding, initialPadding - scrollY / 20); // 20 - коэффициент для изменения отступов
+    const fontSize = Math.max(reducedFontSize, initialFontSize - scrollY / 200); // 200 - коэффициент для изменения размера шрифта
+
+    header.style.padding = `${padding}px 0`;
+    header.style.fontSize = `${fontSize}em`;
+}
+
+window.addEventListener('scroll', onScroll);

@@ -266,11 +266,6 @@ nav ul li a:hover {
     margin-right: -170px;
 }
 
-.text-wrap {
-    overflow: hidden; 
-    padding-right: 0px; 
-}
-
 .services-table {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 

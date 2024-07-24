@@ -88,3 +88,25 @@ function onScroll() {
 }
 
 window.addEventListener('scroll', onScroll);
+
+let currentIndex = 0;
+const images = document.querySelectorAll('.slideshow-container img');
+
+function showImage(index) {
+    images[currentIndex].classList.remove('active');
+    currentIndex = index;
+    images[currentIndex].classList.add('active');
+}
+
+function showNextImage() {
+    const nextIndex = (currentIndex + 1) % images.length;
+    showImage(nextIndex);
+}
+
+function showPreviousImage() {
+    const previousIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(previousIndex);
+}
+
+document.querySelector('.left-arrow').addEventListener('click', showPreviousImage);
+document.querySelector('.right-arrow').addEventListener('click', showNextImage);
